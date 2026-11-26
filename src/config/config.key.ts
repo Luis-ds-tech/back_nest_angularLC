@@ -1,4 +1,4 @@
-export enum Configuration {
+export enum Configuration{
     PORT='PORT',
     HOST='HOST',
     USERNAME='USERNAME',

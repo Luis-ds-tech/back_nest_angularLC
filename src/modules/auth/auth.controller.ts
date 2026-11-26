@@ -6,15 +6,13 @@ import { AuthService } from './auth.service.js';
 @Controller('auth')
 export class AuthController {
 
-    constructor(private authService : AuthService){
-
+    constructor(private authService: AuthService){
     }
-
-    @Post("register")
-    registerUser(@Body()userobj : RegisterAuthDto){
-        console.log(userobj);
-        return userobj;
-
+    @Post('register')
+    registerUser(@Body()userObj : RegisterAuthDto){
+        console.log(userObj);
+        return userObj;
+        
     }
 
     @Post('login')
