@@ -1,12 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import * as fs from 'fs';
 import { parse } from 'dotenv';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { join } from 'path';
 
-// Recreamos __dirname para entornos ESM
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 @Injectable()
 export class ConfigService {
